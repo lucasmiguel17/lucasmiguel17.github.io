@@ -29,6 +29,12 @@ body {
   text-align: justify;
 }
 
+.opcao {
+  color: #ffcf00;
+  text-align: left;
+  text-size: 0.75rem;
+}
+
 .form-avaliacao {
   color: #ffffff;
   text-align: justify;
