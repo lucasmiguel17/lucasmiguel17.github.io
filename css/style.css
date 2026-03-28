@@ -5,6 +5,11 @@ body {
   padding: 2rem;
 }
 
+p {
+  color: #ffffff;
+  text-align: justified;
+}
+
 .titulo {
   color: #ffcf00;
   text-align: center;
