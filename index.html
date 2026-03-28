@@ -1,23 +1,41 @@
 <html>
-  
-  <head style="color: #FFFFFF; font-family: Arial;">
-      LUCAS MIGUEL V. DOS SANTOS - SI IFAL 2026.1
-    </head>
-  
-  <body style="background-color: #0b0b0b; font-family: Arial;">
-    
-  <header>
+  <head>
+    <title>Meu Site</title>
+
+    <style>
+      body.dark {
+        background-color: #0b0b0b;
+        color: #c0c0c0;
+      }
+
+      body.light {
+        background-color: #ffffff;
+        color: #000000;
+      }
+    </style>
+  </head>
+
+  <body class="dark">
+
+    <button onclick="trocarTema()">🌙 / ☀️</button>
+
     <h1>
-      <img src="imagens/giveSTAR_logo.png" width="200" alt="Logo">
+      <img src="imagens/giveSTAR_logo.png" width="200">
     </h1>
-      <h2 style="color: #ffcf00;">
-        Site de avaliação - Desenvolvimento WEB
-      </h2>
-  </header>
-    
-    <footer style="color: #c0c0c0; font-family: Verdana;">
-      <p>© 2026 - Lucas Miguel</p>
-    </footer>
-    
+
+    <h2>Site de avaliação - Desenvolvimento WEB</h2>
+
+    <script>
+      function trocarTema() {
+        const body = document.body;
+
+        if (body.classList.contains("dark")) {
+          body.classList.replace("dark", "light");
+        } else {
+          body.classList.replace("light", "dark");
+        }
+      }
+    </script>
+
   </body>
 </html>
