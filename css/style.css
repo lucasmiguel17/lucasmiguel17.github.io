@@ -5,6 +5,10 @@ body {
   padding: 1rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   text-align: center;
 }
