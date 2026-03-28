@@ -9,6 +9,11 @@ body {
   text-align: center;
 }
 
+.pesquisar {
+  color: #ffeb97;
+  text-align: center;
+}
+
 .titulo {
   color: #ffeb97;
   text-align: center;
@@ -34,5 +39,5 @@ body {
   color: #c0c0c0;
   font-family: Verdana;
   text-align: center;
-  text-size: 2rem;
+  text-size: 0.5rem;
 }
