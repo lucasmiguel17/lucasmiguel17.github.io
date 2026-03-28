@@ -6,7 +6,11 @@ body {
 }
 
 .logo {
-  color: #ffcf00;
+  text-align: center;
+}
+
+.titulo {
+  color: #ffeb97;
   text-align: center;
 }
 
