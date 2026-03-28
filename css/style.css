@@ -19,6 +19,11 @@ body {
   text-align: center;
 }
 
+.paragrafo-normal {
+  color: #ffffff;
+  text-align: center;
+}
+
 p {
   color: #ffffff;
   text-align: justify;
