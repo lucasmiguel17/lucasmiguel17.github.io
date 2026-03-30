@@ -39,6 +39,10 @@ html {
   text-size: 0.75rem;
 }
 
+.login {
+  color: #ffcf00;
+  text-align: left;
+}
 .form-avaliacao {
   color: #ffffff;
   text-align: justify;
