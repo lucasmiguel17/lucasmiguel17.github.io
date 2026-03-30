@@ -36,13 +36,16 @@ html {
 
 /* DIVS */
 
+  /* PESQUISAR */
+
 .pesquisar {
   margin-left: 0;
-  color: #ffeb97;
+  background-color: #ffcf00;
+  color: #0b0b0b;
   text-align: left;
 }
 
-/* FAZER LOGIN */
+  /* LOGIN */
 
 .fazer-login {
   color: #ffcf00;
@@ -64,7 +67,7 @@ html {
   cursor: pointer;
 }
 
-/* FAZER AVALIAÇÃO */
+  /* AVALIAÇÃO */
 
 .form-avaliacao {
   color: #ffffff;
