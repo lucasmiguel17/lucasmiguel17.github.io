@@ -9,12 +9,16 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  color: #ffeb97;
+}
+
 .logo {
   text-align: center;
 }
 
 .titulo {
-  color: #ffeb97;
+  color: #ffffff;
   text-align: center;
 }
 
