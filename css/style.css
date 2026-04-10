@@ -73,7 +73,7 @@ a {
   text-align: left;
 
   width: 20%;
-  heigh: 80%;
+  heigh: 100%;
   
   background-color: #ffcf00;
 
@@ -90,7 +90,7 @@ a {
 }
 
 .fazer-login button {
-  width: 30%;
+  width: 100%;
   padding: 0.5rem;
   background-color: #0b0b0b;
   color: #ffcf00;
