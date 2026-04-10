@@ -72,7 +72,9 @@ a {
   color: #0b0b0b;
   text-align: left;
 
-  width: 100%;
+  width: 20%;
+  heigh: 80%;
+  
   background-color: #ffcf00;
 
   display: flex;
