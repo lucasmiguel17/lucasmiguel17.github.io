@@ -73,7 +73,7 @@ a {
   text-align: left;
 
   width: 100%;
-  background-color: #ffeb97;
+  background-color: #ffcf00;
 
   display: flex;
   flex-direction: column;
@@ -91,7 +91,7 @@ a {
   width: 30%;
   padding: 0.5rem;
   background-color: #0b0b0b;
-  color: #ffeb97;
+  color: #ffcf00;
   border: 1px solid #444;
   border-radius: 10px;
   cursor: pointer;
