@@ -69,9 +69,16 @@ a {
   /* LOGIN */
 
 .fazer-login {
-  color: #ffcf00;
+  color: #0b0b0b;
   text-align: left;
-  padding: 
+
+  width: 30%;
+  background-color: #ffeb97;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centraliza vertical */
+  padding: 2rem;
 }
 
 .fazer-login input {
