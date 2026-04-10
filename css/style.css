@@ -38,6 +38,16 @@ a {
   text-size: 0.75rem;
 }
 
+.card {
+  background-color: #ffeb97; /* mais visível */
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
 /* DIVS */
 
   /* PESQUISAR */
