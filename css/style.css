@@ -82,16 +82,16 @@ a {
 }
 
 .fazer-login input {
-  width: 25%;
+  width: 75%;
   padding: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .fazer-login button {
-  width: 5%;
+  width: 10%;
   padding: 0.5rem;
-  background-color: #ffeb97;
-  color: #0b0b0b;
+  background-color: #0b0b0b;
+  color: #ffeb97;
   border: none;
   cursor: pointer;
 }
