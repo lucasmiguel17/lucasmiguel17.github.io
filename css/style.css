@@ -94,6 +94,7 @@ a {
   flex-direction: column;
   justify-content: center;   /* centraliza vertical */
   padding: 2rem;
+  margin: 0.5rem;
 
   box-shadow: 5px 5px 10px black;
 
@@ -102,6 +103,7 @@ a {
 .fazer-login a {
   color: #0b0b0b;
 }
+
 .fazer-login input {
   width: 100%;
   padding: 0.5rem;
