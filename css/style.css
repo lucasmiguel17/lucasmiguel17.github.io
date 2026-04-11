@@ -13,6 +13,16 @@ a {
   color: #ffeb97;
 }
 
+input {
+  border-radius: 5px;
+  border: 1px solid #0b0b0b;
+  background-color: #ffcf00;
+  
+  color: white;
+
+    box-sizing: border-box; /* ESSENCIAL */
+}
+
 .logo {
   text-align: center;
 }
