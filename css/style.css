@@ -13,6 +13,12 @@ a {
   color: #ffeb97;
 }
 
+main {
+  display: flex;
+  height: 100vh;
+  flex-wrap: nowrap;
+}
+
 .logo {
   text-align: center;
 }
