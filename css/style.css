@@ -15,12 +15,12 @@ a {
 
 input {
   border-radius: 5px;
-  border: 1px solid #0b0b0b;
-  background-color: #ffcf00;
+  border: 1px solid #ffcf00;
+  background-color: #0b0b0b;
   
   color: white;
 
-    box-sizing: border-box; /* ESSENCIAL */
+    box-sizing: border-box;
 }
 
 .logo {
