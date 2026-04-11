@@ -13,12 +13,6 @@ a {
   color: #ffeb97;
 }
 
-main {
-  display: flex;
-  height: 100vh;
-  flex-wrap: nowrap;
-}
-
 .logo {
   text-align: center;
 }
@@ -73,6 +67,12 @@ main {
 }
 
   /* LOGIN */
+
+.login-page {
+  display: flex;
+  height: 100vh;
+  flex-wrap: nowrap;
+}
 
 .login {
   background-image: url("../imagens/fundo-login.jpg");
