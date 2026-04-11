@@ -74,7 +74,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 
-  margin: 0;
+  margin: 2rem;
   padding: 0;
 }
 
@@ -96,7 +96,7 @@ a {
   color: #0b0b0b;
   text-align: left;
 
-  width: 40%;
+  width: 30%;
   height: 70%;
   
   background-color: #ffcf00;
@@ -105,7 +105,9 @@ a {
   flex-direction: column;
   justify-content: center;   /* centraliza vertical */
   padding: 2rem;
-  margin: 0.5rem;
+  
+  border: 1px solid #444;
+  border-radius: 10px;
 
   box-shadow: 5px 5px 10px black;
 
