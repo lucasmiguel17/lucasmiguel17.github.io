@@ -73,6 +73,9 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  margin: 0;
+  padding: 0;
 }
 
 .fazer-login {
