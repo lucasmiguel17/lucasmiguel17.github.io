@@ -82,9 +82,8 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  box-shadow: 10px 10px 10px black;
 
-  padding-right: 5rem;
+  padding-right: 8rem;
 }
 
 .login-logo img {
@@ -97,7 +96,7 @@ a {
   text-align: left;
 
   width: 30%;
-  height: 70%;
+  height: 100%;
   
   background-color: #ffcf00;
 
