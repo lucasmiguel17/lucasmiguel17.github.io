@@ -84,6 +84,8 @@ a {
   flex-direction: column;
   justify-content: center;   /* centraliza vertical */
   padding: 2rem;
+
+  box-shadow: 5px 5px 10px black;
 }
 
 .fazer-login input {
