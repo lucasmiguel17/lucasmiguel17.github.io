@@ -94,6 +94,12 @@ a {
   margin-bottom: 1rem;
 }
 
+.imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .fazer-login button {
   width: 100%;
   padding: 0.5rem;
