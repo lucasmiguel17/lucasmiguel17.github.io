@@ -79,7 +79,17 @@ a {
 }
 
 .login-logo {
-  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 10px 10px 10px black;
+
+  padding-right: 5rem;
+}
+
+.login-logo img {
+  max-width: 30%;
+  height: auto;
 }
 
 .fazer-login {
