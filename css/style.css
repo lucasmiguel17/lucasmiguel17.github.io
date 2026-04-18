@@ -1,26 +1,38 @@
-body {
-  background-color: #0b0b0b;
-  font-family: Arial;
-  margin: 0.5rem;
-  padding: 0.5rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #0b0b0b;
+  font-family: Arial, sans-serif;
+  /*layout lateral */
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Evita barra de rolagem dupla */
+}
+
 a {
   color: #ffeb97;
+  text-decoration: none; /* Tira o sublinhado dos links */
+}
+
+a:hover {
+  color: #ffffff; /* Fica branco ao passar o mouse */
 }
 
 input {
   border-radius: 5px;
   border: 1px solid #ffcf00;
   background-color: #0b0b0b;
-  
   color: white;
-
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
 }
 
 .logo {
@@ -42,24 +54,122 @@ input {
   text-align: justify;
 }
 
-.opcao {
+/* =========================================
+   NOVO LAYOUT: BARRA LATERAL
+========================================= */
+.sidebar {
+  width: 280px;
+  background-color: #111111; /* Um pouquinho mais claro que o fundo pra destacar */
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-right: 1px solid #222;
+  height: 100%;
+}
+
+.menu-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.1rem;
+}
+
+.rodape-sidebar {
+  margin-top: auto; /* Joga o rodapé lá pro final da barra lateral */
+  font-size: 0.75rem;
+}
+
+/* =========================================
+   NOVO LAYOUT: CONTEÚDO PRINCIPAL (Grid)
+========================================= */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto; /* Se tiver muitas avaliações, rola só essa parte */
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); 
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+}
+
+.card-img {
+  width: 160px;
+  height: 240px;
+  background-color: #333;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #333;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stars {
+  color: #ffcf00; /* Usando o seu amarelo */
+  font-size: 22px;
+}
+
+.percent {
+  font-size: 14px;
   color: #ffcf00;
-  text-align: left;
-  text-size: 0.75rem;
 }
 
-/* DIVS */
-
-  /* PESQUISAR */
-
-.pesquisar {
-  margin-left: 0;
-  color: #ffeb97;
-  text-align: left;
+.title {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-  /* LOGIN */
+.meta-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
 
+.age-rating {
+  background-color: #d32f2f;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.harlien-rating {
+  background-color: #ffcf00; /* Usando o seu amarelo */
+  color: #0b0b0b;
+}
+
+.review-title {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffcf00;
+}
+
+.review-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* =========================================
+   SEU CSS DE LOGIN MANTIDO INTACTO
+========================================= */
 .login-page {
   display: flex;
   height: 100vh;
@@ -71,7 +181,6 @@ input {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   margin: 2rem;
   padding: 0;
 }
@@ -80,7 +189,6 @@ input {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
   padding-right: 8rem;
 }
 
@@ -92,22 +200,16 @@ input {
 .fazer-login {
   color: #0b0b0b;
   text-align: left;
-
   width: 550px;
   height: 650px;
-  
   background-color: #ffcf00;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* centraliza vertical */
+  justify-content: center;   
   padding: 2rem;
-  
   border: 1px solid #444;
   border-radius: 10px;
-
   box-shadow: 5px 5px 10px black;
-
 }
 
 .fazer-login a {
@@ -136,8 +238,6 @@ input {
   cursor: pointer;
 }
 
-  /* AVALIAÇÃO */
-
 .form-avaliacao {
   color: #ffffff;
   text-align: justify;
@@ -148,5 +248,4 @@ input {
   color: #c0c0c0;
   font-family: Verdana;
   text-align: center;
-  text-size: 0.5rem;
 }
