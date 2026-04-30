@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  color: #0b0b0b;
+  color: #ffcf00;
   text-decoration: none; /* Tira o sublinhado dos links */
 }
 
@@ -59,7 +59,7 @@ input {
 ========================================= */
 .sidebar {
   width: 280px;
-  background-color: #ffcf00; /* Um pouquinho mais claro que o fundo pra destacar */
+  background-color: #292929; /* Um pouquinho mais claro que o fundo pra destacar */
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
@@ -200,8 +200,8 @@ input {
 .fazer-login {
   color: #0b0b0b;
   text-align: left;
-  width: 650px;
-  height: 500px;
+  width: 505px;
+  height: 600px;
   background-color: #ffcf00;
   display: flex;
   flex-direction: column;
