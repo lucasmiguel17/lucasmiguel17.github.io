@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #0b0b0b;
+  background-color: #ffcf00;
   font-family: Arial, sans-serif;
   /*layout lateral */
   display: flex;
@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  color: #ffeb97;
+  color: #0b0b0b;
   text-decoration: none; /* Tira o sublinhado dos links */
 }
 
