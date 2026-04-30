@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #ffcf00;
+  background-color: #0b0b0b;
   font-family: Arial, sans-serif;
   /*layout lateral */
   display: flex;
@@ -59,12 +59,12 @@ input {
 ========================================= */
 .sidebar {
   width: 280px;
-  background-color: #111111; /* Um pouquinho mais claro que o fundo pra destacar */
+  background-color: #ffcf00; /* Um pouquinho mais claro que o fundo pra destacar */
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  border-right: 1px solid #222;
+  border-right: 1px solid #ffcf00;
   height: 100%;
 }
 
