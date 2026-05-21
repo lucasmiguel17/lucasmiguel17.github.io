@@ -15,20 +15,143 @@
 
 <body>
 
-    <h1>ATIVIDADE JS</h1>
+    <div class="container">
+        <h1>IFAL - Campus Arapiraca</h1>
+        <h2>Atividade: JavaScript</h2>
+        <p><strong>Lucas Miguel Vieira dos Santos</strong></p>
+        <hr>
 
-<
-    
+        <p>Clique nos botões abaixo para testar cada função:</p>
+        
+        <button onclick="testarMaiorMenor()">1) Executar MAIOR_MENOR</button>
+        <button onclick="testarVogal()">2) Executar VOGAL</button>
+        <button onclick="testarLimites()">3) Executar LIMITES</button>
+        <button onclick="testarOrdem()">4) Executar ORDEM</button>
+        <button onclick="testarPositivoNegativo()">5) Executar POSITIVO_NEGATIVO</button>
+        <button onclick="testarParImpar()">6) Executar PAR_IMPAR</button>
+    </div>
+
     <script>
-        // --- QUESTÃO 1: MAIOR_MENOR ---
+        // ==========================================
+        // 1) FUNÇÃO: MAIOR_MENOR
+        // ==========================================
         function MAIOR_MENOR(a, b, c, d, e) {
-            // Seu código aqui (Dica: use Math.max e Math.min, ou estruturas 'if')
             let maior = Math.max(a, b, c, d, e);
             let menor = Math.min(a, b, c, d, e);
-            alert("Maior: " + maior + " | Menor: " + menor);
+            alert("Dos números digitados:\nMaior valor: " + maior + "\nMenor valor: " + menor);
         }
 
+        function testarMaiorMenor() {
+            let a = parseInt(prompt("Digite o 1º número inteiro:"));
+            let b = parseInt(prompt("Digite o 2º número inteiro:"));
+            let c = parseInt(prompt("Digite o 3º número inteiro:"));
+            let d = parseInt(prompt("Digite o 4º número inteiro:"));
+            let e = parseInt(prompt("Digite o 5º número inteiro:"));
+            MAIOR_MENOR(a, b, c, d, e);
+        }
+
+        // ==========================================
+        // 2) FUNÇÃO: VOGAL
+        // ==========================================
+        function VOGAL(c) {
+            // Transforma o caractere em minúsculo para validar tanto 'A' quanto 'a'
+            let char = c.toLowerCase();
+            if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+
+        function testarVogal() {
+            let caractere = prompt("Digite um único caractere:");
+            if (caractere && caractere.length === 1) {
+                let resultado = VOGAL(caractere);
+                alert("Resultado da função VOGAL: " + resultado);
+            } else {
+                alert("Por favor, digite apenas UM caractere.");
+            }
+        }
+
+        // ==========================================
+        // 3) FUNÇÃO: LIMITES
+        // ==========================================
+        function LIMITES(li, ls) {
+            let pares = [];
+            let somatorio = 0;
+
+            // Como o intervalo é aberto, começamos em li + 1 e vamos até ls - 1
+            for (let i = li + 1; i < ls; i++) {
+                if (i % 2 === 0) {
+                    pares.push(i);
+                    somatorio += i;
+                }
+            }
+
+            alert("Intervalo aberto entre " + li + " e " + ls + ":\n" +
+                  "Números pares encontrados: " + (pares.length > 0 ? pares.join(", ") : "Nenhum") + "\n" +
+                  "Somatório dos pares: " + somatorio);
+        }
+
+        function testarLimites() {
+            let limiteInferior = parseInt(prompt("Digite o limite inferior (li):"));
+            let limiteSuperior = parseInt(prompt("Digite o limite superior (ls):"));
+            
+            if (limiteInferior < limiteSuperior) {
+                LIMITES(limiteInferior, limiteSuperior);
+            } else {
+                alert("Erro: Certifique-se de que o limite superior é maior que o inferior.");
+            }
+        }
+
+        // ==========================================
+        // 4) FUNÇÃO: ORDEM
+        // ==========================================
+        function ORDEM(a, b, c) {
+            let numeros = [a, b, c];
+            // Ordena numéricamente de forma crescente
+            numeros.sort(function(x, y) { return x - y; });
+            return numeros;
+        }
+
+        function testarOrdem() {
+            let a = parseInt(prompt("Digite o 1º número para ordenar:"));
+            let b = parseInt(prompt("Digite o 2º número para ordenar:"));
+            let c = parseInt(prompt("Digite o 3º número para ordenar:"));
+            
+            let resultadoOrdenado = ORDEM(a, b, c);
+            alert("Números ordenados em ordem crescente:\n" + resultadoOrdenado.join(", "));
+        }
+
+        // ==========================================
+        // 5) FUNÇÃO: POSITIVO_NEGATIVO
+        // ==========================================
+        function POSITIVO_NEGATIVO(x) {
+            // Considera zero como positivo, ou ajuste 'x > 0' se o professor preferir desconsiderar o zero
+            return x >= 0; 
+        }
+
+        function testarPositivoNegativo() {
+            let num = parseInt(prompt("Digite um número inteiro:"));
+            let ehPositivo = POSITIVO_NEGATIVO(num);
+            alert("O número " + num + " é positivo?\nRetorno (Boolean): " + ehPositivo);
+        }
+
+        // ==========================================
+        // 6) FUNÇÃO: PAR_IMPAR
+        // ==========================================
+        function PAR_IMPAR(x) {
+            return x % 2 === 0;
+        }
+
+        function testarParImpar() {
+            let num = parseInt(prompt("Digite um número inteiro:"));
+            let ehPar = PAR_IMPAR(num);
+            alert("O número " + num + " é par?\nRetorno (Boolean): " + ehPar);
+        }
     </script>
+
+</div>
 
 </body>
 </html>
