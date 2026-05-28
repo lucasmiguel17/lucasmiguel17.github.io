@@ -28,7 +28,7 @@ a:hover {
 
 input {
   border-radius: 5px;
-  border: 1px solid #ffcf00;
+  border: 1px solid #292929;
   background-color: #0b0b0b;
   color: white;
   width: 100%;
@@ -98,8 +98,7 @@ h2 {
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  border-right: 1px solid #ffcf00;
+  gap: 20px;
   height: 100%;
 }
 
