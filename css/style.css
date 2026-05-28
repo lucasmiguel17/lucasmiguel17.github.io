@@ -98,7 +98,7 @@ h2 {
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
   border-right: 1px solid #ffcf00;
   height: 100%;
 }
