@@ -193,8 +193,10 @@ h2 {
   font-size: 14px;
   line-height: 1.5;
   margin-top: 10px;
+  max-width: 500px;
   max-height: 100px;
   overflow: hidden;
+  
 }
 
 .percent {
