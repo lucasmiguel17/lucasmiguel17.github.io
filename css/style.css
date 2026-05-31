@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: #ffcf00;
 }
 
 .h-fazer-login {
@@ -169,11 +169,11 @@ h2 {
 
 .icone-produto {
   position: absolute;
-  bottom: 10px;
+  bottom: 12px;
   right: 10px;
 
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
 }
 
 .card-info {
