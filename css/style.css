@@ -274,6 +274,10 @@ h2 {
   cursor: pointer;
 }
 
+.fazer-login button:hover {
+  color: #131313;
+}
+
 .form-avaliacao {
   color: #ffffff;
   text-align: justify;
