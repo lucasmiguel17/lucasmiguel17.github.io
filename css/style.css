@@ -188,6 +188,13 @@ h2 {
   font-size: 22px;
 }
 
+.sinopse {
+  color: #b0b0b0;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
 .percent {
   font-size: 14px;
   color: #ffcf00;
