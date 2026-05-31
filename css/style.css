@@ -97,13 +97,20 @@ h2 {
 
 .sidebar {
   font-weight: bold;
+  
   width: 280px;
+  height: 100%;
+
+  position: fixed;
+
+  left: 0;
+  top: 0;
+  
   background-color: #292929;
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 100%;
   overflow: hidden;
 }
 
@@ -126,6 +133,7 @@ h2 {
 .pg-principal {
   flex: 1;
   padding: 2rem;
+  margin-left: 280px;
 }
 
 .main-content {
