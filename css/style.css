@@ -14,7 +14,6 @@ body {
   /*layout lateral */
   display: flex;
   height: 100vh;
-  overflow: hidden; /* Evita barra de rolagem dupla */
 }
 
 a {
@@ -103,6 +102,7 @@ h2 {
   flex-direction: column;
   gap: 20px;
   height: 100%;
+  overflow: hidden;
 }
 
 .menu-lateral {
@@ -204,6 +204,14 @@ h2 {
   font-size: 14px;
   color: #ccc;
   line-height: 1.5;
+}
+
+/* AVALIAÇÕES RECENTES */
+
+.avaliações-recentes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 /* =========================================
