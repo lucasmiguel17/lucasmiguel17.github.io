@@ -200,13 +200,13 @@ h3 {
     width: fit-content;
 }
 
-.card:hover .card-info {
+/*.card:hover .card-info {
     pointer-events: auto;
     
     height: 240px;
-    width: 250px;
+    max-width: 250px;
     opacity: 1;
-}
+}*/
 
 .card-info {
   display: flex;
@@ -236,7 +236,6 @@ h3 {
 .capa-container:hover + .card-info {
     width: 250px;
     opacity: 1;
-    
 
     border: 1px solid #ffcf00;
     box-shadow: 0 0 10px #ffcf00;
