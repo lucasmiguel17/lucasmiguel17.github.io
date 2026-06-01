@@ -221,6 +221,8 @@ h3 {
 
 .capa-container {
   position: relative;
+  width: 160px;
+  height: 240px;
 }
 
 .capa {
@@ -269,7 +271,7 @@ h3 {
   font-size: 14px;
   line-height: 1.5;
   margin-top: 10px;
-  max-width: 200px;
+  max-width: 300px;
   max-height: 100px;
   overflow: hidden;
 
