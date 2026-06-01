@@ -248,8 +248,13 @@ h3 {
 
 .avaliações-recentes {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 20px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding-bottom: 10px;
 }
 
 /* =========================================
