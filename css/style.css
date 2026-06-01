@@ -197,7 +197,6 @@ h3 {
 
 .card:hover {
     width: 450px;
-    width: fit-content;
 }
 
 .card:hover .card-info {
