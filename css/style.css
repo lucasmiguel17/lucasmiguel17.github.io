@@ -10,11 +10,10 @@ html {
 
 body {
   background-color: #0b0b0b;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   /*layout lateral */
   display: flex;
   height: 100vh;
-  overflow: hidden; /* Evita barra de rolagem dupla */
 }
 
 a {
@@ -27,7 +26,7 @@ a:hover {
 }
 
 input {
-
+  border-radius: 5px;
   background-color: #131313;
   color: white;
   width: 100%;
@@ -37,11 +36,15 @@ input {
 /*  ATIVIDADE JS */
 
 h1 {
-  color: white;
+  color: black;
 }
 
 h2 {
-  color: white;
+  color: #ffcf00;
+}
+
+h3 {
+  color:white;
 }
 
 .h-fazer-login {
@@ -95,14 +98,24 @@ h2 {
 /* =========================================
    NOVO LAYOUT: BARRA LATERAL
 ========================================= */
+
 .sidebar {
+  font-weight: bold;
+
   width: 280px;
+  height: 100%;
+
+  position: fixed;
+
+  left: 0;
+  top: 0;
+
   background-color: #292929;
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 100%;
+  overflow: hidden;
 }
 
 .menu-lateral {
@@ -120,6 +133,26 @@ h2 {
 /* =========================================
    NOVO LAYOUT: CONTEÚDO PRINCIPAL (Grid)
 ========================================= */
+
+.pg-principal {
+  flex: 1;
+  padding: 2rem;
+  margin-left: 280px;
+}
+
+/* AVALIAÇÕES RECENTES */
+
+.avaliações-recentes {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding-bottom: 10px;
+}
+
 .main-content {
   flex: 1;
   padding: 40px;
@@ -135,10 +168,14 @@ h2 {
 .card {
   display: flex;
   gap: 20px;
-  color: #fff;
+  margin-top: 2rem;
 }
 
-.card-img {
+.capa-container {
+  position: relative;
+}
+
+.capa {
   width: 160px;
   height: 240px;
   background-color: #333;
@@ -147,15 +184,50 @@ h2 {
   border: 1px solid #333;
 }
 
+.icone-produto {
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+
+  width: 26px;
+  height: 26px;
+}
+
 .card-info {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  color: white;
 }
 
 .stars {
   color: #ffcf00; /* Usando o seu amarelo */
+  color: #ffcf00; /* amarelo */
   font-size: 22px;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.stars:hover {
+  color: #ffffff; /* Fica branco ao passar o mouse */
+}
+
+.stars:hover::after {
+  content: " Clique para alterar a classificação";
+  font-size: 14px;
+  color: #ffcf00;
+}
+
+.sinopse {
+  color: #b0b0b0;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
+  max-width: 200px;
+  max-height: 100px;
+  overflow: hidden;
+
 }
 
 .percent {
@@ -204,8 +276,11 @@ h2 {
 ========================================= */
 .login-page {
   display: flex;
+
+  justify-content: center;
+  align-items: center;
+
   height: 100vh;
-  flex-wrap: nowrap;
 }
 
 .login {
@@ -232,8 +307,10 @@ h2 {
 .fazer-login {
   color: #0b0b0b;
   text-align: left;
-  width: 680px;
-  height: 710px;
+
+  width: 500px;
+  min-height: 450px;
+
   background-color: #ffcf00;
   display: flex;
   flex-direction: column;
@@ -268,6 +345,11 @@ h2 {
   border: 1px solid #444;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.fazer-login button:hover {
+  background-color: #131313;
+  color: white;
 }
 
 .form-avaliacao {
