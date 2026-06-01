@@ -14,6 +14,8 @@ body {
   /*layout lateral */
   display: flex;
   height: 100vh;
+
+  overflow-x: hidden;
 }
 
 a {
@@ -154,15 +156,15 @@ h3 {
   padding-bottom: 10px;
 }
 
-.avaliacoes-recentes::-webkit-scrollbar {
+.avaliações-recentes::-webkit-scrollbar {
   height: 3px;
 }
 
-.avaliacoes-recentes::-webkit-scrollbar-track {
+.avaliações-recentes::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.avaliacoes-recentes::-webkit-scrollbar-thumb {
+.avaliações-recentes::-webkit-scrollbar-thumb {
   background: #ffcf00;
   border-radius: 999px;
 }
