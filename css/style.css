@@ -190,17 +190,19 @@ h3 {
   flex-shrink: 0;
 
   width: 160px;
+  height: 240px;
 
   transition: 0.4s ease;
 }
 
 .card:hover {
-    height: 240px;
     width: 450px;
+    width: fit-content;
 }
 
 .card:hover .card-info {
-
+    pointer-events: auto;
+    
     height: 240px;
     width: 250px;
     opacity: 1;
@@ -218,6 +220,7 @@ h3 {
   opacity: 0;
 
   overflow: hidden;
+  pointer-events: none;
 
   transition: 0.4s ease;
 }
@@ -226,6 +229,17 @@ h3 {
   position: relative;
   width: 160px;
   height: 240px;
+
+  cursor: pointer;
+}
+
+.capa-container:hover + .card-info {
+    width: 250px;
+    opacity: 1;
+    
+
+    border: 1px solid #ffcf00;
+    box-shadow: 0 0 10px #ffcf00;
 }
 
 .capa {
@@ -236,14 +250,7 @@ h3 {
   object-fit: cover;
   border: 1px solid #333;
 
-  cursor: pointer;
-
   transition: 0.2s;
-}
-
-.capa:hover {
-  border: 1px solid #ffcf00;
-  box-shadow: 0 0 10px #ffcf00;
 }
 
 .icone-produto {
