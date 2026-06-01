@@ -204,6 +204,7 @@ h3 {
     pointer-events: auto;
     
     height: 240px;
+    width: 250px;
     max-width: 250px;
     opacity: 1;
 }
