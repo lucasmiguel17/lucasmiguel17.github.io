@@ -195,10 +195,13 @@ h3 {
 }
 
 .card:hover {
+    height: 240px;
     width: 450px;
 }
 
 .card:hover .card-info {
+
+    height: 240px;
     width: 250px;
     opacity: 1;
 }
