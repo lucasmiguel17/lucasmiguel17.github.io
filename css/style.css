@@ -138,6 +138,8 @@ h3 {
   flex: 1;
   padding: 2rem;
   margin-left: 280px;
+
+  padding-bottom: 10px;
 }
 
 /* AVALIAÇÕES RECENTES */
@@ -150,7 +152,6 @@ h3 {
   overflow-x: auto;
   overflow-y: hidden;
 
-  padding-bottom: 10px;
 }
 
 .card {
@@ -158,7 +159,7 @@ h3 {
   gap: 20px;
   margin-top: 2rem;
 
-  /*flex-shrink: 0;*/
+  flex-shrink: 0;
 }
 
 .capa-container {
