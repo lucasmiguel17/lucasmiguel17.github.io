@@ -155,7 +155,7 @@ h3 {
 }
 
 .avaliacoes-recentes::-webkit-scrollbar {
-  height: 5px;
+  height: 3px;
 }
 
 .avaliacoes-recentes::-webkit-scrollbar-track {
@@ -163,8 +163,8 @@ h3 {
 }
 
 .avaliacoes-recentes::-webkit-scrollbar-thumb {
-  background: #292929;
-  border-radius: 10px;
+  background: #ffcf00;
+  border-radius: 999px;
 }
 
 .main-content {
