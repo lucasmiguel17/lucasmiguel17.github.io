@@ -188,8 +188,21 @@ h3 {
 }
 
 .stars {
-  color: #ffcf00; /* Usando o seu amarelo */
+  color: #ffcf00; /* amarelo */
   font-size: 22px;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.stars:hover {
+  color: #ffffff; /* Fica branco ao passar o mouse */
+}
+
+.stars:hover::after {
+  content: " Clique para alterar a classificação";
+  font-size: 14px;
+  color: #ffcf00;
 }
 
 .sinopse {
