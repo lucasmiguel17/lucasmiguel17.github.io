@@ -47,6 +47,10 @@ h2 {
 
 h3 {
   color:white;
+  line-height: 1.5;
+  margin-top: 10px;
+  max-width: 200px;
+  max-height: 100px;
 }
 
 .h-fazer-login {
@@ -158,6 +162,7 @@ h3 {
 
 .avaliações-recentes::-webkit-scrollbar {
   height: 3px;
+  width: 10px;
 }
 
 .avaliações-recentes::-webkit-scrollbar-track {
@@ -165,7 +170,7 @@ h3 {
 }
 
 .avaliações-recentes::-webkit-scrollbar-thumb {
-  background: #ffcf00;
+  background: #ffd0005e;
   border-radius: 999px;
 }
 
