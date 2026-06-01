@@ -14,4 +14,15 @@ formulario.addEventListener("submit", function(event) {
   // Mensagem de sucesso
   alert("Login realizado com sucesso!");
 
-});
+  const email = document.getElementById("email").value;
+
+  //SO ACEITA EMAIL
+  
+  const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  if (!emailValido.test(email)) {
+      alert("Digite um e-mail válido.");
+      return;
+  }
+  
+  });
