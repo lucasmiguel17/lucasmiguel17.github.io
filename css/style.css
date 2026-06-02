@@ -14,8 +14,6 @@ body {
   /*layout lateral */
   display: flex;
   min-height: 100vh;
-
-  overflow-x: hidden;
 }
 
 a {
