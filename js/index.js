@@ -1,7 +1,5 @@
 // ESTRELAS
 
-alert("JS carregou");
-
 const gruposDeEstrelas = document.querySelectorAll(".stars");
 
 gruposDeEstrelas.forEach(grupo => {
