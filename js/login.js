@@ -1,28 +1,24 @@
-// =========================
-// LOGIN
-// =========================
-
-// Pega o formulário do HTML
 const formulario = document.querySelector("form");
 
-// Escuta quando o formulário for enviado
 formulario.addEventListener("submit", function(event) {
 
-  // Impede a página de recarregar
-  event.preventDefault();
+    event.preventDefault();
 
-  // Mensagem de sucesso
-  alert("Login realizado com sucesso!");
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
 
-  const email = document.getElementById("email").value;
+    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  //SO ACEITA EMAIL
-  
-  const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  
-  if (!emailValido.test(email)) {
-      alert("Digite um e-mail válido.");
-      return;
-  }
-  
-  });
+    if (!emailValido.test(email)) {
+        alert("Digite um e-mail válido.");
+        return;
+    }
+
+    if (senha.length < 8) {
+        alert("A senha deve ter pelo menos 8 caracteres.");
+        return;
+    }
+
+    alert("Login realizado com sucesso!");
+
+});
