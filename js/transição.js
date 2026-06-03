@@ -1,5 +1,9 @@
 // FUNCIONAMENTO DA TRANSIÇÃO
 
+window.addEventListener("load", () => {
+    document.body.classList.add("fade-in");
+});
+
 const links = document.querySelectorAll("a");
 
 links.forEach(link => {
@@ -8,17 +12,16 @@ links.forEach(link => {
 
         const destino = this.href;
 
-        if (destino) {
+        if (!destino) return;
 
-            e.preventDefault();
+        e.preventDefault();
 
-            document.body.classList.add("fade-out");
+        document.body.classList.remove("fade-in");
+        document.body.classList.add("fade-out");
 
-            setTimeout(() => {
-                window.location.href = destino;
-            }, 300);
-
-        }
+        setTimeout(() => {
+            window.location.href = destino;
+        }, 400);
 
     });
 
