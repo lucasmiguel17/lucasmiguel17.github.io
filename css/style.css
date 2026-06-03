@@ -23,6 +23,10 @@ body.fade-out {
     opacity: 0;
 }
 
+body.fade-in {
+    opacity: 1;
+}
+
 a {
   color: #ffcf00;
   text-decoration: none; /* Tira o sublinhado dos links */
