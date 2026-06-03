@@ -303,21 +303,6 @@ h3 {
   color: #ffffff; /* Fica branco ao passar o mouse */
 }
 
-.stars span {
-    color: #555;
-    font-size: 22px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.stars span:hover {
-    transform: scale(1.2);
-}
-
-.stars span.ativa {
-    color: #ffcf00;
-}
-
 .review {
   color: #b0b0b0;
   font-size: 14px;
