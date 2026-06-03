@@ -174,9 +174,9 @@ h3 {
   border-radius: 999px;
 }
 
-/* DESTAQUES */
+/* POPULARES */
 
-.destaques-recentes {
+.mais-populares {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
@@ -190,16 +190,16 @@ h3 {
   padding-bottom: 10px;
 }
 
-.destaques-recentes::-webkit-scrollbar {
+.mais-populares::-webkit-scrollbar {
   height: 3px;
   width: 10px;
 }
 
-.destaques-recentes::-webkit-scrollbar-track {
+.mais-populares::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.destaques-recentes::-webkit-scrollbar-thumb {
+.mais-populares::-webkit-scrollbar-thumb {
   background: #ffd0005e;
   border-radius: 999px;
 }
