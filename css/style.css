@@ -410,8 +410,91 @@ h3 {
     transition: 0.2s;
 }
 
+.estrela:hover{
+    transform: scale(1.15);
+}
+
 .estrela.ativa {
     color: #ffcf00;
+}
+
+.avaliar {
+    background-color: #0b0b0b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+#form-avaliacao {
+    width: 700px;
+
+    background-color: #131313;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    border: 1px solid #292929;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#titulo-avaliacao {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.avaliacao-estrelas {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+#nota-escolhida {
+    color: #ffcf00;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+}
+
+#contador {
+    color: #888;
+    text-align: right;
+    font-size: 14px;
+}
+
+#form-avaliacao button {
+    background-color: #ffcf00;
+
+    color: black;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 12px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#form-avaliacao button:hover {
+    transform: scale(1.02);
 }
 
 /* REVIEW */
