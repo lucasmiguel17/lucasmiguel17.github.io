@@ -43,3 +43,15 @@ estrelas.forEach((estrela, indice) => {
     });
 
 });
+
+// CONTAGEM DE CARACTERES
+
+const review = document.getElementById("nova-review");
+const contador = document.getElementById("contador");
+
+review.addEventListener("input", () => {
+
+    contador.textContent =
+        `${review.value.length}/500 caracteres`;
+
+});
