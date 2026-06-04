@@ -497,6 +497,56 @@ label {
     transform: scale(1.02);
 }
 
+/* GENEROS */
+
+/* JOGOS */
+
+.jogos {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  width: 100%;
+  max-width: 100%;
+
+  padding-bottom: 10px;
+}
+
+/* FILMES */
+
+.filmes {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  width: 100%;
+  max-width: 100%;
+
+  padding-bottom: 10px;
+}
+
+/* SÉRIES */
+
+.séries {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  width: 100%;
+  max-width: 100%;
+
+  padding-bottom: 10px;
+}
+
 /* REVIEW */
 
 .review {
