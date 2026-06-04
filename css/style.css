@@ -131,8 +131,42 @@ h3 {
   font-size: 0.75rem;
 }
 
+/* CONTATO E SUPORTE */
+
+.contato-e-suporte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.contato {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  gap: 10px;
+}
+
+.icone-instagram {
+  width: 20px;
+  height: 20px;
+
+  filter: grayscale(100%);
+
+  transition: 0.2s;
+}
+
+.icone-instagram:hover {
+  width: 24px;
+  height: 24px;
+
+  filter: sepia(1) saturate(20) hue-rotate(15deg);
+}
+
 /* =========================================
-   NOVO LAYOUT: CONTEÚDO PRINCIPAL (Grid)
+   CONTEÚDO PRINCIPAL (Grid)
 ========================================= */
 
 .pg-principal {
@@ -178,9 +212,13 @@ h3 {
 
 .idade {
   padding: 4px 8px;
+
+  width: 16px;
+  height: 16px;
+
   border-radius: 4px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .idade-livre {
@@ -189,7 +227,7 @@ h3 {
 }
 
 .idade-6 {
-  background: pink;
+  background: rgb(199, 80, 100);
   color: white;
 }
 
@@ -199,12 +237,12 @@ h3 {
 }
 
 .idade-12 {
-  background: yellow;
+  background: rgb(255, 238, 0);
   color: black;
 }
 
 .idade-14 {
-  background: orangered;
+  background: rgb(255, 114, 20);
   color: white;
 }
 
