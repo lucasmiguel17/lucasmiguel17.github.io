@@ -58,7 +58,7 @@ formulario.addEventListener("submit", (event) => {
     }
 
     alert("Avaliação bem-sucedida!");
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
 
 });
 
