@@ -1,8 +1,13 @@
 // FADE IN E FADE OUT
 
-window.addEventListener("load", () => {
-    document.body.classList.add("fade-in");
-});
+function mostrarPagina() {
+    document.body.classList.remove("fade-out");
+    document.body.classList.add("loaded");
+}
+
+window.addEventListener("load", mostrarPagina);
+
+window.addEventListener("pageshow", mostrarPagina);
 
 const links = document.querySelectorAll("a");
 
@@ -16,7 +21,6 @@ links.forEach(link => {
 
         e.preventDefault();
 
-        document.body.classList.remove("fade-in");
         document.body.classList.add("fade-out");
 
         setTimeout(() => {
