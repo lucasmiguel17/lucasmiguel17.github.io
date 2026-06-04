@@ -1,9 +1,13 @@
-// FUNCIONAMENTO DA TRANSIÇÃO
+// Fade In
+window.addEventListener("DOMContentLoaded", () => {
 
-window.addEventListener("load", () => {
-    document.body.classList.add("fade-in");
+    setTimeout(() => {
+        document.body.classList.add("loaded");
+    }, 10);
+
 });
 
+// Fade Out
 const links = document.querySelectorAll("a");
 
 links.forEach(link => {
@@ -16,7 +20,7 @@ links.forEach(link => {
 
         e.preventDefault();
 
-        document.body.classList.remove("fade-in");
+        document.body.classList.remove("loaded");
         document.body.classList.add("fade-out");
 
         setTimeout(() => {
