@@ -11,20 +11,20 @@ html {
 body {
   background-color: #0b0b0b;
   font-family: 'Poppins', sans-serif;
-
+  /*layout lateral */
   display: flex;
   min-height: 100vh;
 
   opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-body.loaded {
-  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 body.fade-out {
-  opacity: 0;
+    opacity: 0;
+}
+
+body.fade-in {
+    opacity: 1;
 }
 
 a {
