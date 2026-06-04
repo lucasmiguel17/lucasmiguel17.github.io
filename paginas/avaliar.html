@@ -4,13 +4,50 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Avaliar - giveSTAR</title>
   </head>
-  
+
   <body class="avaliar">
 
-    <h2 id="titulo-avaliacao"></h2>
-    
-  </body>
+<h2>Avaliar Produção</h2>
 
-   <script src="../js/avaliar.js"></script>
-  
+<form id="form-avaliacao">
+
+    <h3 id="titulo-avaliacao"></h3>
+
+    <div class="avaliacao-estrelas">
+
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+
+    </div>
+
+    <p id="nota-escolhida">
+        Nota: 0/5
+    </p>
+
+    <label for="review">Sua avaliação:</label>
+
+    <textarea
+        id="review"
+        rows="8"
+        maxlength="500"
+        placeholder="Escreva sua opinião..."
+    ></textarea>
+
+    <p id="contador">
+        0/500 caracteres
+    </p>
+
+    <button type="submit">
+        Enviar avaliação
+    </button>
+
+</form>
+
+</body>
+
+<script src="../js/avaliar.js"></script>
+
 </html>
