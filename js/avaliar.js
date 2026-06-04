@@ -53,5 +53,13 @@ review.addEventListener("input", () => {
 
     contador.textContent =
         `${review.value.length}/500 caracteres`;
+    
+    if (quantidade > 450) {
+        contador.style.color = "orangered";
+    }
+
+    if (quantidade >= 500) {
+        contador.style.color = "red";
+    }
 
 });
