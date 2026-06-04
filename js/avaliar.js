@@ -18,7 +18,12 @@ const estrelas = document.querySelectorAll(".estrela");
 const notaTexto = document.getElementById("nota-escolhida");
 const notaInput = document.getElementById("nota");
 
+const formulario = document.getElementById("form-avaliacao");
+const review = document.getElementById("nova-review");
+
 let notaAtual = 0;
+
+// ESTRELAS
 
 estrelas.forEach((estrela, indice) => {
 
@@ -41,6 +46,26 @@ estrelas.forEach((estrela, indice) => {
         });
 
     });
+
+});
+
+// Validação do formulário
+
+formulario.addEventListener("submit", (event) => {
+
+    event.preventDefault();
+
+    if (notaAtual === 0) {
+        alert("Escolha uma nota antes de enviar.");
+        return;
+    }
+
+    if (review.value.trim() === "") {
+        alert("Escreva uma avaliação.");
+        return;
+    }
+
+    alert("Avaliação bem-sucedida!");
 
 });
 
