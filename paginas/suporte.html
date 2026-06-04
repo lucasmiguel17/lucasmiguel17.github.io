@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Contato e suporte - giveSTAR</title>
+    <link rel="icon" href="../imagens/favicon.png" type="image/png">
+    <title>Suporte - giveSTAR</title>
   </head>
-  
+
   <body class="avaliar">
 
-    <h2 id="titulo-avaliacao"></h2>
-    
-  </body>
+    <form id="form-avaliacao">
 
-   <script src="../js/suporte.js"></script>
-  
+        <h2 id="titulo-avaliacao" style="color: #ffcf00; margin-bottom: 20px; text-align: center;">Suporte & Contato</h2>
+
+        <!-- Questionário de Suporte -->
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome..." required style="margin-bottom: 15px;">
+
+        <label for="motivo">Motivo do Contato:</label>
+        <select id="motivo" style="width: 100%; padding: 10px; background-color: #131313; color: white; border-radius: 5px; border: none; margin-bottom: 15px; font-family: 'Poppins', sans-serif;">
+            <option value="duvida">Dúvida sobre o site</option>
+            <option value="problema">Reportar um problema / Bug</option>
+            <option value="sugestao">Sugestão de melhoria</option>
+            <option value="outro">Outros assuntos</option>
+        </select>
+
+        <label for="nova-review">Sua mensagem:</label>
+        <textarea
+            id="nova-review"
+            rows="8"
+            maxlength="500"
+            placeholder="Descreva detalhadamente o que precisa..."
+            required
+        ></textarea>
+
+        <button type="submit" style="margin-bottom: 20px;">
+            Enviar Mensagem
+        </button>
+
+        <a href="../index.html" style="display: block; text-align: center; font-size: 0.9rem;">Voltar para a Home</a>
+
+    </form>
+
+  </body>
 </html>
