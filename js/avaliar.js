@@ -44,6 +44,23 @@ estrelas.forEach((estrela, indice) => {
 
 });
 
+// ENVIAR AVALIAÇÃO
+
+const formulario = document.getElementById("form-avaliacao");
+
+formulario.addEventListener("submit", (event) => {
+
+    event.preventDefault();
+
+    if (notaAtual === 0) {
+        alert("Escolha uma nota antes de enviar.");
+        return;
+    }
+
+    alert("Avaliação bem-sucedida!");
+
+});
+
 // CONTAGEM DE CARACTERES
 
 const review = document.getElementById("nova-review");
